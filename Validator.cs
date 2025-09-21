@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -21,11 +22,26 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// <param name="position">Position of the letter</param>
         /// <param name="letter"> content of the textbox</param>
         /// <returns> int 1 or 2 </returns>
-        public static int Validate(int position, String letter)
+        public  int Validate(int position, String letter)
         {
             int result = -1;
 
+            var wordToGuessArray  = wordToGuess.ToCharArray();
+            for (int i = 0; i < wordToGuessArray.Length; i++)
+            {
+                if (wordToGuessArray[position] == letter[0])
+                {
+                    result = 1;
+                    break;
+                }
+                
+            }
 
+            if (wordToGuess.Contains(letter) && result != 1)
+            {
+                result = 2;
+               
+            }
 
 
 
