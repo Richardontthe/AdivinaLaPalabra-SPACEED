@@ -15,6 +15,28 @@ namespace AdivinaLaPalabraRicardoHernandez
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void layoutControl()
+        {
+            switch (Counter.TryNumber)
+            {
+                case 1:
+
+                    break;
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnValidate_Click(object sender, EventArgs e)
+        {
+            var valitador = new Validator();
+            int result = valitador.Validate(1, "a");
         }
     }
 }

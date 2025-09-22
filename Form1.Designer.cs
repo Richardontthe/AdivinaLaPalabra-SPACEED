@@ -58,7 +58,7 @@
             this.textBox28 = new System.Windows.Forms.TextBox();
             this.textBox29 = new System.Windows.Forms.TextBox();
             this.textBox30 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnValidate = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -272,14 +272,15 @@
             this.textBox30.Size = new System.Drawing.Size(31, 26);
             this.textBox30.TabIndex = 25;
             // 
-            // button1
+            // btnValidate
             // 
-            this.button1.Location = new System.Drawing.Point(564, 422);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(99, 41);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "Validate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnValidate.Location = new System.Drawing.Point(564, 422);
+            this.btnValidate.Name = "btnValidate";
+            this.btnValidate.Size = new System.Drawing.Size(99, 41);
+            this.btnValidate.TabIndex = 30;
+            this.btnValidate.Text = "Validate";
+            this.btnValidate.UseVisualStyleBackColor = true;
+            this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
             // 
             // lblTitle
             // 
@@ -295,9 +296,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 504);
+            this.ClientSize = new System.Drawing.Size(733, 504);
             this.Controls.Add(this.lblTitle);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnValidate);
             this.Controls.Add(this.textBox26);
             this.Controls.Add(this.textBox27);
             this.Controls.Add(this.textBox28);
@@ -330,6 +331,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -367,7 +369,7 @@
         private System.Windows.Forms.TextBox textBox28;
         private System.Windows.Forms.TextBox textBox29;
         private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnValidate;
         private System.Windows.Forms.Label lblTitle;
     }
 }

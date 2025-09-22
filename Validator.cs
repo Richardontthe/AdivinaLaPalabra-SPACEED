@@ -9,9 +9,9 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     internal class Validator
     {
-        private String wordToGuess; 
+        private String wordToGuess = "apple"; 
 
-        public String WordToGuess { get => wordToGuess; }
+        public String WordToGuess { get => wordToGuess;}
 
 
         /// <summary>
@@ -21,15 +21,15 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         /// <param name="position">Position of the letter</param>
         /// <param name="letter"> content of the textbox</param>
-        /// <returns> int 1 or 2 </returns>
+        /// <returns> int 1 or 2 (-1 if there is an error) </returns>
         public  int Validate(int position, String letter)
         {
             int result = -1;
-
+            letter = letter.ToLower();
             var wordToGuessArray  = wordToGuess.ToCharArray();
             for (int i = 0; i < wordToGuessArray.Length; i++)
             {
-                if (wordToGuessArray[position] == letter[0])
+                if (wordToGuessArray[i] == letter[0]&& i == position -1)
                 {
                     result = 1;
                     break;
@@ -42,9 +42,6 @@ namespace AdivinaLaPalabraRicardoHernandez
                 result = 2;
                
             }
-
-
-
 
 
             return result;
