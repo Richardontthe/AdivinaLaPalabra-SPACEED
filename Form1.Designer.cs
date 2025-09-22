@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt11 = new System.Windows.Forms.TextBox();
+            this.txt12 = new System.Windows.Forms.TextBox();
+            this.txt13 = new System.Windows.Forms.TextBox();
+            this.txt15 = new System.Windows.Forms.TextBox();
+            this.txt14 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -62,45 +62,45 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt11
             // 
-            this.textBox1.Location = new System.Drawing.Point(236, 88);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(31, 26);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
+            this.txt11.Location = new System.Drawing.Point(236, 88);
+            this.txt11.Name = "txt11";
+            this.txt11.Size = new System.Drawing.Size(31, 26);
+            this.txt11.TabIndex = 0;
+            this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
-            // textBox2
+            // txt12
             // 
-            this.textBox2.Location = new System.Drawing.Point(295, 88);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(31, 26);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.txt12.Location = new System.Drawing.Point(295, 88);
+            this.txt12.Name = "txt12";
+            this.txt12.Size = new System.Drawing.Size(31, 26);
+            this.txt12.TabIndex = 1;
+            this.txt12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
-            // textBox3
+            // txt13
             // 
-            this.textBox3.Location = new System.Drawing.Point(354, 88);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(31, 26);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
+            this.txt13.Location = new System.Drawing.Point(354, 88);
+            this.txt13.Name = "txt13";
+            this.txt13.Size = new System.Drawing.Size(31, 26);
+            this.txt13.TabIndex = 2;
+            this.txt13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
-            // textBox4
+            // txt15
             // 
-            this.textBox4.Location = new System.Drawing.Point(472, 88);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(31, 26);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
+            this.txt15.Location = new System.Drawing.Point(472, 88);
+            this.txt15.Name = "txt15";
+            this.txt15.Size = new System.Drawing.Size(31, 26);
+            this.txt15.TabIndex = 3;
+            this.txt15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
-            // textBox5
+            // txt14
             // 
-            this.textBox5.Location = new System.Drawing.Point(413, 88);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(31, 26);
-            this.textBox5.TabIndex = 4;
-            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
+            this.txt14.Location = new System.Drawing.Point(413, 88);
+            this.txt14.Name = "txt14";
+            this.txt14.Size = new System.Drawing.Size(31, 26);
+            this.txt14.TabIndex = 4;
+            this.txt14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // textBox6
             // 
@@ -355,11 +355,11 @@
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt14);
+            this.Controls.Add(this.txt15);
+            this.Controls.Add(this.txt13);
+            this.Controls.Add(this.txt12);
+            this.Controls.Add(this.txt11);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -370,11 +370,11 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt11;
+        private System.Windows.Forms.TextBox txt12;
+        private System.Windows.Forms.TextBox txt13;
+        private System.Windows.Forms.TextBox txt15;
+        private System.Windows.Forms.TextBox txt14;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
