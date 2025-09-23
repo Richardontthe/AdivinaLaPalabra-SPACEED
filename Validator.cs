@@ -63,8 +63,6 @@ namespace AdivinaLaPalabraRicardoHernandez
                 textBox.BackColor = System.Drawing.Color.Gray;
                 textBox.ForeColor = System.Drawing.Color.Yellow;
             }
-            
-
 
         }
    

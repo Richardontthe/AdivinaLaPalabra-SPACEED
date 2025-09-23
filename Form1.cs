@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AdivinaLaPalabraRicardoHernandez
 {
@@ -262,28 +263,35 @@ namespace AdivinaLaPalabraRicardoHernandez
         
         private void btnValidate_Click(object sender, EventArgs e)
         {
-            switch Contador.TryNumber
+            System.Windows.Forms.TextBox[] txtGroup = null;
+            switch (Counter.TryNumber)
             {
                 case 1:
-                    validateTextBoxes(new TextBox[] { txt11, txt12, txt13, txt14, txt15 });
+                     txtGroup = new System.Windows.Forms.TextBox[] { txt11, txt12, txt13, txt14, txt15 };
                     
                     break;
                 case 2:
-                    validateTextBoxes(new TextBox[] { txt21, txt22, txt23, txt24, txt25 });
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt21, txt22, txt23, txt24, txt25 };
                     break;
                 case 3:
-                    validateTextBoxes(new TextBox[] { txt31, txt32, txt33, txt34, txt35 });
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt31, txt32, txt33, txt34, txt35 };
                     break;
                 case 4:
-                    validateTextBoxes(new TextBox[] { txt41, txt42, txt43, txt44, txt45 });
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt41, txt42, txt43, txt44, txt45 };
                     break;
                 case 5:
-                    validateTextBoxes(new TextBox[] { txt51, txt52, txt53, txt54, txt55 });
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt51, txt52, txt53, txt54, txt55 };
                     break;
                 case 6:
-                    validateTextBoxes(new TextBox[] { txt61, txt62, txt63, txt64, txt65 });
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt61, txt62, txt63, txt64, txt65 };
                     break;
             }
+
+
+
+
+
+
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -294,7 +302,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -310,7 +318,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -326,7 +334,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -342,7 +350,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -358,7 +366,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -374,7 +382,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -390,7 +398,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -406,7 +414,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -422,7 +430,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -438,7 +446,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -454,7 +462,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -470,7 +478,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -486,7 +494,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -497,8 +505,8 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
                 return;
             }
-            
-            TextBox txt1 = sender as TextBox;
+
+            System.Windows.Forms.TextBox txt1 = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -514,7 +522,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -530,7 +538,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -546,7 +554,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -562,7 +570,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -578,7 +586,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -594,7 +602,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -610,7 +618,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -626,7 +634,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -642,7 +650,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -658,7 +666,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -674,7 +682,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -690,7 +698,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -706,7 +714,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -722,7 +730,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -738,7 +746,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -754,7 +762,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
@@ -770,7 +778,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 return;
             }
 
-            TextBox txt = sender as TextBox;
+            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
 
             if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
             {
