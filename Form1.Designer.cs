@@ -64,7 +64,7 @@
             // 
             // txt11
             // 
-            this.txt11.Location = new System.Drawing.Point(236, 88);
+            this.txt11.Location = new System.Drawing.Point(201, 92);
             this.txt11.Name = "txt11";
             this.txt11.Size = new System.Drawing.Size(31, 26);
             this.txt11.TabIndex = 0;
@@ -72,7 +72,7 @@
             // 
             // txt12
             // 
-            this.txt12.Location = new System.Drawing.Point(295, 88);
+            this.txt12.Location = new System.Drawing.Point(260, 92);
             this.txt12.Name = "txt12";
             this.txt12.Size = new System.Drawing.Size(31, 26);
             this.txt12.TabIndex = 1;
@@ -80,7 +80,7 @@
             // 
             // txt13
             // 
-            this.txt13.Location = new System.Drawing.Point(354, 88);
+            this.txt13.Location = new System.Drawing.Point(319, 92);
             this.txt13.Name = "txt13";
             this.txt13.Size = new System.Drawing.Size(31, 26);
             this.txt13.TabIndex = 2;
@@ -88,7 +88,7 @@
             // 
             // txt15
             // 
-            this.txt15.Location = new System.Drawing.Point(472, 88);
+            this.txt15.Location = new System.Drawing.Point(437, 92);
             this.txt15.Name = "txt15";
             this.txt15.Size = new System.Drawing.Size(31, 26);
             this.txt15.TabIndex = 3;
@@ -96,7 +96,7 @@
             // 
             // txt14
             // 
-            this.txt14.Location = new System.Drawing.Point(413, 88);
+            this.txt14.Location = new System.Drawing.Point(378, 92);
             this.txt14.Name = "txt14";
             this.txt14.Size = new System.Drawing.Size(31, 26);
             this.txt14.TabIndex = 4;
@@ -104,7 +104,7 @@
             // 
             // txt24
             // 
-            this.txt24.Location = new System.Drawing.Point(413, 144);
+            this.txt24.Location = new System.Drawing.Point(378, 148);
             this.txt24.Name = "txt24";
             this.txt24.Size = new System.Drawing.Size(31, 26);
             this.txt24.TabIndex = 9;
@@ -112,7 +112,7 @@
             // 
             // txt25
             // 
-            this.txt25.Location = new System.Drawing.Point(472, 144);
+            this.txt25.Location = new System.Drawing.Point(437, 148);
             this.txt25.Name = "txt25";
             this.txt25.Size = new System.Drawing.Size(31, 26);
             this.txt25.TabIndex = 8;
@@ -120,7 +120,7 @@
             // 
             // txt23
             // 
-            this.txt23.Location = new System.Drawing.Point(354, 144);
+            this.txt23.Location = new System.Drawing.Point(319, 148);
             this.txt23.Name = "txt23";
             this.txt23.Size = new System.Drawing.Size(31, 26);
             this.txt23.TabIndex = 7;
@@ -128,7 +128,7 @@
             // 
             // txt22
             // 
-            this.txt22.Location = new System.Drawing.Point(295, 144);
+            this.txt22.Location = new System.Drawing.Point(260, 148);
             this.txt22.Name = "txt22";
             this.txt22.Size = new System.Drawing.Size(31, 26);
             this.txt22.TabIndex = 6;
@@ -136,7 +136,7 @@
             // 
             // txt21
             // 
-            this.txt21.Location = new System.Drawing.Point(236, 144);
+            this.txt21.Location = new System.Drawing.Point(201, 148);
             this.txt21.Name = "txt21";
             this.txt21.Size = new System.Drawing.Size(31, 26);
             this.txt21.TabIndex = 5;
@@ -144,7 +144,7 @@
             // 
             // txt34
             // 
-            this.txt34.Location = new System.Drawing.Point(413, 200);
+            this.txt34.Location = new System.Drawing.Point(378, 204);
             this.txt34.Name = "txt34";
             this.txt34.Size = new System.Drawing.Size(31, 26);
             this.txt34.TabIndex = 14;
@@ -152,7 +152,7 @@
             // 
             // txt35
             // 
-            this.txt35.Location = new System.Drawing.Point(472, 200);
+            this.txt35.Location = new System.Drawing.Point(437, 204);
             this.txt35.Name = "txt35";
             this.txt35.Size = new System.Drawing.Size(31, 26);
             this.txt35.TabIndex = 13;
@@ -160,7 +160,7 @@
             // 
             // txt33
             // 
-            this.txt33.Location = new System.Drawing.Point(354, 200);
+            this.txt33.Location = new System.Drawing.Point(319, 204);
             this.txt33.Name = "txt33";
             this.txt33.Size = new System.Drawing.Size(31, 26);
             this.txt33.TabIndex = 12;
@@ -168,7 +168,7 @@
             // 
             // txt32
             // 
-            this.txt32.Location = new System.Drawing.Point(295, 200);
+            this.txt32.Location = new System.Drawing.Point(260, 204);
             this.txt32.Name = "txt32";
             this.txt32.Size = new System.Drawing.Size(31, 26);
             this.txt32.TabIndex = 11;
@@ -176,7 +176,7 @@
             // 
             // txt31
             // 
-            this.txt31.Location = new System.Drawing.Point(236, 200);
+            this.txt31.Location = new System.Drawing.Point(201, 204);
             this.txt31.Name = "txt31";
             this.txt31.Size = new System.Drawing.Size(31, 26);
             this.txt31.TabIndex = 10;
@@ -184,7 +184,7 @@
             // 
             // txt44
             // 
-            this.txt44.Location = new System.Drawing.Point(413, 256);
+            this.txt44.Location = new System.Drawing.Point(378, 260);
             this.txt44.Name = "txt44";
             this.txt44.Size = new System.Drawing.Size(31, 26);
             this.txt44.TabIndex = 19;
@@ -192,7 +192,7 @@
             // 
             // txt45
             // 
-            this.txt45.Location = new System.Drawing.Point(472, 256);
+            this.txt45.Location = new System.Drawing.Point(437, 260);
             this.txt45.Name = "txt45";
             this.txt45.Size = new System.Drawing.Size(31, 26);
             this.txt45.TabIndex = 18;
@@ -200,7 +200,7 @@
             // 
             // txt43
             // 
-            this.txt43.Location = new System.Drawing.Point(354, 256);
+            this.txt43.Location = new System.Drawing.Point(319, 260);
             this.txt43.Name = "txt43";
             this.txt43.Size = new System.Drawing.Size(31, 26);
             this.txt43.TabIndex = 17;
@@ -208,7 +208,7 @@
             // 
             // txt42
             // 
-            this.txt42.Location = new System.Drawing.Point(295, 256);
+            this.txt42.Location = new System.Drawing.Point(260, 260);
             this.txt42.Name = "txt42";
             this.txt42.Size = new System.Drawing.Size(31, 26);
             this.txt42.TabIndex = 16;
@@ -216,7 +216,7 @@
             // 
             // txt41
             // 
-            this.txt41.Location = new System.Drawing.Point(236, 256);
+            this.txt41.Location = new System.Drawing.Point(201, 260);
             this.txt41.Name = "txt41";
             this.txt41.Size = new System.Drawing.Size(31, 26);
             this.txt41.TabIndex = 15;
@@ -224,7 +224,7 @@
             // 
             // txt54
             // 
-            this.txt54.Location = new System.Drawing.Point(413, 312);
+            this.txt54.Location = new System.Drawing.Point(378, 316);
             this.txt54.Name = "txt54";
             this.txt54.Size = new System.Drawing.Size(31, 26);
             this.txt54.TabIndex = 24;
@@ -232,7 +232,7 @@
             // 
             // txt55
             // 
-            this.txt55.Location = new System.Drawing.Point(472, 312);
+            this.txt55.Location = new System.Drawing.Point(437, 316);
             this.txt55.Name = "txt55";
             this.txt55.Size = new System.Drawing.Size(31, 26);
             this.txt55.TabIndex = 23;
@@ -240,7 +240,7 @@
             // 
             // txt53
             // 
-            this.txt53.Location = new System.Drawing.Point(354, 312);
+            this.txt53.Location = new System.Drawing.Point(319, 316);
             this.txt53.Name = "txt53";
             this.txt53.Size = new System.Drawing.Size(31, 26);
             this.txt53.TabIndex = 22;
@@ -248,7 +248,7 @@
             // 
             // txt52
             // 
-            this.txt52.Location = new System.Drawing.Point(295, 312);
+            this.txt52.Location = new System.Drawing.Point(260, 316);
             this.txt52.Name = "txt52";
             this.txt52.Size = new System.Drawing.Size(31, 26);
             this.txt52.TabIndex = 21;
@@ -256,7 +256,7 @@
             // 
             // txt51
             // 
-            this.txt51.Location = new System.Drawing.Point(236, 312);
+            this.txt51.Location = new System.Drawing.Point(201, 316);
             this.txt51.Name = "txt51";
             this.txt51.Size = new System.Drawing.Size(31, 26);
             this.txt51.TabIndex = 20;
@@ -264,7 +264,7 @@
             // 
             // txt64
             // 
-            this.txt64.Location = new System.Drawing.Point(413, 368);
+            this.txt64.Location = new System.Drawing.Point(378, 372);
             this.txt64.Name = "txt64";
             this.txt64.Size = new System.Drawing.Size(31, 26);
             this.txt64.TabIndex = 29;
@@ -272,7 +272,7 @@
             // 
             // txt65
             // 
-            this.txt65.Location = new System.Drawing.Point(472, 368);
+            this.txt65.Location = new System.Drawing.Point(437, 372);
             this.txt65.Name = "txt65";
             this.txt65.Size = new System.Drawing.Size(31, 26);
             this.txt65.TabIndex = 28;
@@ -280,7 +280,7 @@
             // 
             // txt63
             // 
-            this.txt63.Location = new System.Drawing.Point(354, 368);
+            this.txt63.Location = new System.Drawing.Point(319, 372);
             this.txt63.Name = "txt63";
             this.txt63.Size = new System.Drawing.Size(31, 26);
             this.txt63.TabIndex = 27;
@@ -288,7 +288,7 @@
             // 
             // txt62
             // 
-            this.txt62.Location = new System.Drawing.Point(295, 368);
+            this.txt62.Location = new System.Drawing.Point(260, 372);
             this.txt62.Name = "txt62";
             this.txt62.Size = new System.Drawing.Size(31, 26);
             this.txt62.TabIndex = 26;
@@ -296,7 +296,7 @@
             // 
             // txt61
             // 
-            this.txt61.Location = new System.Drawing.Point(236, 368);
+            this.txt61.Location = new System.Drawing.Point(201, 372);
             this.txt61.Name = "txt61";
             this.txt61.Size = new System.Drawing.Size(31, 26);
             this.txt61.TabIndex = 25;
@@ -304,7 +304,7 @@
             // 
             // btnValidate
             // 
-            this.btnValidate.Location = new System.Drawing.Point(564, 422);
+            this.btnValidate.Location = new System.Drawing.Point(529, 426);
             this.btnValidate.Name = "btnValidate";
             this.btnValidate.Size = new System.Drawing.Size(99, 41);
             this.btnValidate.TabIndex = 30;
@@ -316,7 +316,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(163, 9);
+            this.lblTitle.Location = new System.Drawing.Point(128, 13);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(417, 58);
             this.lblTitle.TabIndex = 31;
@@ -327,7 +327,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(733, 504);
+            this.ClientSize = new System.Drawing.Size(694, 504);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnValidate);
             this.Controls.Add(this.txt64);

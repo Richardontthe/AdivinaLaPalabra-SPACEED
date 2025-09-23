@@ -15,7 +15,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         public Form1()
         {
             InitializeComponent();
-
+           
 
         }
 
@@ -24,7 +24,18 @@ namespace AdivinaLaPalabraRicardoHernandez
             switch (Counter.TryNumber)
             {
                 case 1:
-
+                    txt11.Enabled = true;
+                    txt12.Enabled = true;
+                    txt13.Enabled = true;
+                    txt14.Enabled = true;
+                    txt15.Enabled = true;
+                    break;
+                case 2:
+                    txt11.Enabled = true;
+                    txt12.Enabled = true;
+                    txt13.Enabled = true;
+                    txt14.Enabled = true;
+                    txt15.Enabled = true;
                     break;
             }
         }
@@ -34,6 +45,7 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
+        
         private void btnValidate_Click(object sender, EventArgs e)
         {
             var valitador = new Validator();
