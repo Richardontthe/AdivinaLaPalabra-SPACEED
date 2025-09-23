@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace AdivinaLaPalabraRicardoHernandez
 {
@@ -22,7 +23,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// <param name="position">Position of the letter</param>
         /// <param name="letter"> content of the textbox</param>
         /// <returns> int 1 or 2 (-1 if there is an error) </returns>
-        public int Validate(int position, String letter)
+        private int Validate(int position, String letter)
         {
             int result = -1;
             letter = letter.ToLower();
@@ -45,6 +46,26 @@ namespace AdivinaLaPalabraRicardoHernandez
 
 
             return result;
+        }
+
+        public void TextBoxValidate(TextBox textBox)
+        {
+            int position = Convert.ToInt32(textBox.Name.Substring(textBox.Name.Length - 1, 1));
+            int validationResult = Validate(position, textBox.Text.ToLower());
+
+            if (validationResult == 1)
+            {
+                textBox.BackColor = System.Drawing.Color.Gray;
+                textBox.ForeColor = System.Drawing.Color.Green;
+            }
+            else if (validationResult == 2)
+            {
+                textBox.BackColor = System.Drawing.Color.Gray;
+                textBox.ForeColor = System.Drawing.Color.Yellow;
+            }
+            
+
+
         }
    
 

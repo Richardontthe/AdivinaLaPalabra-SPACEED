@@ -12,10 +12,11 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     public partial class Form1 : Form
     {
+        Validator oValidator = new Validator(); 
         public Form1()
         {
             InitializeComponent();
-           layoutControl();
+            layoutControl();
 
         }
 
@@ -261,8 +262,28 @@ namespace AdivinaLaPalabraRicardoHernandez
         
         private void btnValidate_Click(object sender, EventArgs e)
         {
-            var valitador = new Validator();
-            int result = valitador.Validate(1, "a");
+            switch Contador.TryNumber
+            {
+                case 1:
+                    validateTextBoxes(new TextBox[] { txt11, txt12, txt13, txt14, txt15 });
+                    
+                    break;
+                case 2:
+                    validateTextBoxes(new TextBox[] { txt21, txt22, txt23, txt24, txt25 });
+                    break;
+                case 3:
+                    validateTextBoxes(new TextBox[] { txt31, txt32, txt33, txt34, txt35 });
+                    break;
+                case 4:
+                    validateTextBoxes(new TextBox[] { txt41, txt42, txt43, txt44, txt45 });
+                    break;
+                case 5:
+                    validateTextBoxes(new TextBox[] { txt51, txt52, txt53, txt54, txt55 });
+                    break;
+                case 6:
+                    validateTextBoxes(new TextBox[] { txt61, txt62, txt63, txt64, txt65 });
+                    break;
+            }
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

@@ -14,7 +14,9 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         private static void addtry()
         {
-            tryNumber++;
+            if (tryNumber < 6)
+                tryNumber++;
+            
         }
 
         public static void ResetCounter()
