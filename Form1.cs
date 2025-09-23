@@ -16,6 +16,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         {
             InitializeComponent();
 
+
         }
 
         private void layoutControl()
