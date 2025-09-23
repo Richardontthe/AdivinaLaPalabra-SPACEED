@@ -15,7 +15,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         public Form1()
         {
             InitializeComponent();
-           
+           layoutControl();
 
         }
 
@@ -29,13 +29,226 @@ namespace AdivinaLaPalabraRicardoHernandez
                     txt13.Enabled = true;
                     txt14.Enabled = true;
                     txt15.Enabled = true;
+
+                    txt21.Enabled = false;
+                    txt22.Enabled = false;
+                    txt23.Enabled = false;
+                    txt24.Enabled = false;
+                    txt25.Enabled = false;
+
+                    txt31.Enabled = false;
+                    txt32.Enabled = false;
+                    txt33.Enabled = false;
+                    txt34.Enabled = false;
+                    txt35.Enabled = false;
+
+                    txt41.Enabled = false;
+                    txt42.Enabled = false;
+                    txt43.Enabled = false;
+                    txt44.Enabled = false;
+                    txt45.Enabled = false;
+
+                    txt51.Enabled = false;
+                    txt52.Enabled = false;
+                    txt53.Enabled = false;
+                    txt54.Enabled = false;
+                    txt55.Enabled = false;
+
+                    txt61.Enabled = false;
+                    txt62.Enabled = false;
+                    txt63.Enabled = false;
+                    txt64.Enabled = false;
+                    txt65.Enabled = false;
                     break;
+
                 case 2:
-                    txt11.Enabled = true;
-                    txt12.Enabled = true;
-                    txt13.Enabled = true;
-                    txt14.Enabled = true;
-                    txt15.Enabled = true;
+                    txt11.Enabled = false;
+                    txt12.Enabled = false;
+                    txt13.Enabled = false;
+                    txt14.Enabled = false;
+                    txt15.Enabled = false;
+
+                    txt21.Enabled = true;
+                    txt22.Enabled = true;
+                    txt23.Enabled = true;
+                    txt24.Enabled = true;
+                    txt25.Enabled = true;
+
+                    txt31.Enabled = false;
+                    txt32.Enabled = false;
+                    txt33.Enabled = false;
+                    txt34.Enabled = false;
+                    txt35.Enabled = false;
+
+                    txt41.Enabled = false;
+                    txt42.Enabled = false;
+                    txt43.Enabled = false;
+                    txt44.Enabled = false;
+                    txt45.Enabled = false;
+
+                    txt51.Enabled = false;
+                    txt52.Enabled = false;
+                    txt53.Enabled = false;
+                    txt54.Enabled = false;
+                    txt55.Enabled = false;
+
+                    txt61.Enabled = false;
+                    txt62.Enabled = false;
+                    txt63.Enabled = false;
+                    txt64.Enabled = false;
+                    txt65.Enabled = false;
+                    break;
+
+                case 3:
+                    txt11.Enabled = false;
+                    txt12.Enabled = false;
+                    txt13.Enabled = false;
+                    txt14.Enabled = false;
+                    txt15.Enabled = false;
+
+                    txt21.Enabled = false;
+                    txt22.Enabled = false;
+                    txt23.Enabled = false;
+                    txt24.Enabled = false;
+                    txt25.Enabled = false;
+
+                    txt31.Enabled = true;
+                    txt32.Enabled = true;
+                    txt33.Enabled = true;
+                    txt34.Enabled = true;
+                    txt35.Enabled = true;
+
+                    txt41.Enabled = false;
+                    txt42.Enabled = false;
+                    txt43.Enabled = false;
+                    txt44.Enabled = false;
+                    txt45.Enabled = false;
+
+                    txt51.Enabled = false;
+                    txt52.Enabled = false;
+                    txt53.Enabled = false;
+                    txt54.Enabled = false;
+                    txt55.Enabled = false;
+
+                    txt61.Enabled = false;
+                    txt62.Enabled = false;
+                    txt63.Enabled = false;
+                    txt64.Enabled = false;
+                    txt65.Enabled = false;
+                    break;
+
+                case 4:
+                    txt11.Enabled = false;
+                    txt12.Enabled = false;
+                    txt13.Enabled = false;
+                    txt14.Enabled = false;
+                    txt15.Enabled = false;
+
+                    txt21.Enabled = false;
+                    txt22.Enabled = false;
+                    txt23.Enabled = false;
+                    txt24.Enabled = false;
+                    txt25.Enabled = false;
+
+                    txt31.Enabled = false;
+                    txt32.Enabled = false;
+                    txt33.Enabled = false;
+                    txt34.Enabled = false;
+                    txt35.Enabled = false;
+
+                    txt41.Enabled = true;
+                    txt42.Enabled = true;
+                    txt43.Enabled = true;
+                    txt44.Enabled = true;
+                    txt45.Enabled = true;
+
+                    txt51.Enabled = false;
+                    txt52.Enabled = false;
+                    txt53.Enabled = false;
+                    txt54.Enabled = false;
+                    txt55.Enabled = false;
+
+                    txt61.Enabled = false;
+                    txt62.Enabled = false;
+                    txt63.Enabled = false;
+                    txt64.Enabled = false;
+                    txt65.Enabled = false;
+                    break;
+
+                case 5:
+                    txt11.Enabled = false;
+                    txt12.Enabled = false;
+                    txt13.Enabled = false;
+                    txt14.Enabled = false;
+                    txt15.Enabled = false;
+
+                    txt21.Enabled = false;
+                    txt22.Enabled = false;
+                    txt23.Enabled = false;
+                    txt24.Enabled = false;
+                    txt25.Enabled = false;
+
+                    txt31.Enabled = false;
+                    txt32.Enabled = false;
+                    txt33.Enabled = false;
+                    txt34.Enabled = false;
+                    txt35.Enabled = false;
+
+                    txt41.Enabled = false;
+                    txt42.Enabled = false;
+                    txt43.Enabled = false;
+                    txt44.Enabled = false;
+                    txt45.Enabled = false;
+
+                    txt51.Enabled = true;
+                    txt52.Enabled = true;
+                    txt53.Enabled = true;
+                    txt54.Enabled = true;
+                    txt55.Enabled = true;
+
+                    txt61.Enabled = false;
+                    txt62.Enabled = false;
+                    txt63.Enabled = false;
+                    txt64.Enabled = false;
+                    txt65.Enabled = false;
+                    break;
+
+                case 6:
+                    txt11.Enabled = false;
+                    txt12.Enabled = false;
+                    txt13.Enabled = false;
+                    txt14.Enabled = false;
+                    txt15.Enabled = false;
+
+                    txt21.Enabled = false;
+                    txt22.Enabled = false;
+                    txt23.Enabled = false;
+                    txt24.Enabled = false;
+                    txt25.Enabled = false;
+
+                    txt31.Enabled = false;
+                    txt32.Enabled = false;
+                    txt33.Enabled = false;
+                    txt34.Enabled = false;
+                    txt35.Enabled = false;
+
+                    txt41.Enabled = false;
+                    txt42.Enabled = false;
+                    txt43.Enabled = false;
+                    txt44.Enabled = false;
+                    txt45.Enabled = false;
+
+                    txt51.Enabled = false;
+                    txt52.Enabled = false;
+                    txt53.Enabled = false;
+                    txt54.Enabled = false;
+                    txt55.Enabled = false;
+
+                    txt61.Enabled = true;
+                    txt62.Enabled = true;
+                    txt63.Enabled = true;
+                    txt64.Enabled = true;
+                    txt65.Enabled = true;
                     break;
             }
         }
