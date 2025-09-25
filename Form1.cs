@@ -13,7 +13,7 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     public partial class Form1 : Form
     {
-        Validator oValidator = new Validator(); 
+       GameLogic gameLogic = new GameLogic();
         public Form1()
         {
             InitializeComponent();
@@ -64,11 +64,11 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 2:
-                    txt11.Enabled = false;
-                    txt12.Enabled = false;
-                    txt13.Enabled = false;
-                    txt14.Enabled = false;
-                    txt15.Enabled = false;
+                    txt11.ReadOnly = false;
+                    txt12.ReadOnly = false;
+                    txt13.ReadOnly = false;
+                    txt14.ReadOnly = false;
+                    txt15.ReadOnly = false;
 
                     txt21.Enabled = true;
                     txt22.Enabled = true;
@@ -102,17 +102,17 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 3:
-                    txt11.Enabled = false;
-                    txt12.Enabled = false;
-                    txt13.Enabled = false;
-                    txt14.Enabled = false;
-                    txt15.Enabled = false;
+                    txt11.ReadOnly = true;
+                    txt12.ReadOnly = true;
+                    txt13.ReadOnly = true;
+                    txt14.ReadOnly = true; 
+                    txt15.ReadOnly = true;
 
-                    txt21.Enabled = false;
-                    txt22.Enabled = false;
-                    txt23.Enabled = false;
-                    txt24.Enabled = false;
-                    txt25.Enabled = false;
+                    txt21.ReadOnly = true;
+                    txt22.ReadOnly = true;
+                    txt23.ReadOnly = true;
+                    txt24.ReadOnly = true;
+                    txt25.ReadOnly = true;
 
                     txt31.Enabled = true;
                     txt32.Enabled = true;
@@ -287,10 +287,19 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
             }
 
-
-
-
-
+            if (gameLogic.GameValidation(txtGroup))
+            {
+                MessageBox.Show("Felicidades, has ganado!");
+            }
+            else
+            {
+                    Counter.AddTry();
+                if (Counter.TryNumber > 6)
+                {
+                    MessageBox.Show("Lo siento, has perdido. La palabra era: " + gameLogic.GetWordToGuess());
+                }
+                layoutControl();
+            }
 
         }
 

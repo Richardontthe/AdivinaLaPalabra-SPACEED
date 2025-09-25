@@ -12,7 +12,7 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         public static int TryNumber { get => tryNumber;  }
 
-        private static void addtry()
+        public static void AddTry()
         {
             if (tryNumber < 6)
                 tryNumber++;
