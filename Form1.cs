@@ -13,7 +13,7 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     public partial class Form1 : Form
     {
-       GameLogic gameLogic = new GameLogic();
+        GameLogic gameLogic = new GameLogic();
         public Form1()
         {
             InitializeComponent();
@@ -105,7 +105,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                     txt11.ReadOnly = true;
                     txt12.ReadOnly = true;
                     txt13.ReadOnly = true;
-                    txt14.ReadOnly = true; 
+                    txt14.ReadOnly = true;
                     txt15.ReadOnly = true;
 
                     txt21.ReadOnly = true;
@@ -260,15 +260,15 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
-        
+
         private void btnValidate_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.TextBox[] txtGroup = null;
             switch (Counter.TryNumber)
             {
                 case 1:
-                     txtGroup = new System.Windows.Forms.TextBox[] { txt11, txt12, txt13, txt14, txt15 };
-                    
+                    txtGroup = new System.Windows.Forms.TextBox[] { txt11, txt12, txt13, txt14, txt15 };
+
                     break;
                 case 2:
                     txtGroup = new System.Windows.Forms.TextBox[] { txt21, txt22, txt23, txt24, txt25 };
@@ -287,19 +287,29 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
             }
 
-            if (gameLogic.GameValidation(txtGroup))
+            if (!gameLogic.CheckEmptyTextBoxes(txtGroup))
             {
-                MessageBox.Show("Felicidades, has ganado!");
+
+                if (gameLogic.GameValidation(txtGroup))
+                {
+                    MessageBox.Show("We have a winner!");
+                }
+                else
+                {
+                    Counter.AddTry();
+                    if (Counter.TryNumber > 6)
+                    {
+                        MessageBox.Show("We are sorry, the word was: " + gameLogic.GetWordToGuess());
+                    }
+                    layoutControl();
+                }
             }
             else
             {
-                    Counter.AddTry();
-                if (Counter.TryNumber > 6)
-                {
-                    MessageBox.Show("Lo siento, has perdido. La palabra era: " + gameLogic.GetWordToGuess());
-                }
-                layoutControl();
+                MessageBox.Show("Please complete all words before validating");
+
             }
+
 
         }
 

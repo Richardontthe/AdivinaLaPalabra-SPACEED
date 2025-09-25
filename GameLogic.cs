@@ -19,16 +19,17 @@ namespace AdivinaLaPalabraRicardoHernandez
             if (validationResult == 1)
             {
                 textBox.ForeColor = System.Drawing.Color.Green;
-                textBox.BackColor = System.Drawing.Color.Gray;
+                textBox.BackColor = System.Drawing.Color.LightGray;
             }
             else if (validationResult == 2)
             {
                 textBox.ForeColor = System.Drawing.Color.Yellow;
-                textBox.BackColor = System.Drawing.Color.Gray;
+                textBox.BackColor = System.Drawing.Color.LightGray;
             }
             else
             {
                                textBox.ForeColor = System.Drawing.Color.Gray;
+                               textBox.BackColor = System.Drawing.Color.OrangeRed;
             }
 
         }
@@ -67,6 +68,15 @@ namespace AdivinaLaPalabraRicardoHernandez
             return validator.WordToGuess;
         }
 
+        public bool CheckEmptyTextBoxes(TextBox[] textBoxes)
+        {
+            foreach (var textBox in textBoxes)
+            {
+                if (String.IsNullOrEmpty(textBox.Text))
+                    return true;
+            }
+            return false;
+        }
 
     }
 }
