@@ -47,18 +47,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Counter.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="GameLogicLayer\Counter.cs" />
+    <Compile Include="GraphicLayer\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="GraphicLayer\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Game.cs" />
-    <Compile Include="GameLogic.cs" />
+    <Compile Include="GameLogicLayer\GameLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validator.cs" />
-    <EmbeddedResource Include="Form1.resx">
+    <Compile Include="GameLogicLayer\Validator.cs" />
+    <EmbeddedResource Include="GraphicLayer\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
