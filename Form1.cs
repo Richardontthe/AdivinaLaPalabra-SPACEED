@@ -804,5 +804,11 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Let's try again, the word was: " + gameLogic.GetWordToGuess());
+
+        }
     }
 }

@@ -367,6 +367,7 @@
             this.btnReset.Text = "Reset";
             this.tltp1.SetToolTip(this.btnReset, "Reset will reveal the word and reset a game with a new ");
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Form1
             // 
