@@ -64,11 +64,11 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 2:
-                    txt11.ReadOnly = false;
-                    txt12.ReadOnly = false;
-                    txt13.ReadOnly = false;
-                    txt14.ReadOnly = false;
-                    txt15.ReadOnly = false;
+                    txt11.ReadOnly = true;
+                    txt12.ReadOnly = true;
+                    txt13.ReadOnly = true;
+                    txt14.ReadOnly = true;
+                    txt15.ReadOnly = true;
 
                     txt21.Enabled = true;
                     txt22.Enabled = true;
@@ -140,23 +140,23 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 4:
-                    txt11.Enabled = false;
-                    txt12.Enabled = false;
-                    txt13.Enabled = false;
-                    txt14.Enabled = false;
-                    txt15.Enabled = false;
+                    txt11.ReadOnly = true;
+                    txt12.ReadOnly = true;
+                    txt13.ReadOnly = true;
+                    txt14.ReadOnly = true;
+                    txt15.ReadOnly = true;
 
-                    txt21.Enabled = false;
-                    txt22.Enabled = false;
-                    txt23.Enabled = false;
-                    txt24.Enabled = false;
-                    txt25.Enabled = false;
+                    txt21.ReadOnly = true;
+                    txt22.ReadOnly = true;
+                    txt23.ReadOnly = true;
+                    txt24.ReadOnly = true;
+                    txt25.ReadOnly = true;
 
-                    txt31.Enabled = false;
-                    txt32.Enabled = false;
-                    txt33.Enabled = false;
-                    txt34.Enabled = false;
-                    txt35.Enabled = false;
+                    txt31.ReadOnly = true;
+                    txt32.ReadOnly = true;
+                    txt33.ReadOnly = true;
+                    txt34.ReadOnly = true;
+                    txt35.ReadOnly = true;
 
                     txt41.Enabled = true;
                     txt42.Enabled = true;
@@ -178,29 +178,29 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 5:
-                    txt11.Enabled = false;
-                    txt12.Enabled = false;
-                    txt13.Enabled = false;
-                    txt14.Enabled = false;
-                    txt15.Enabled = false;
+                    txt11.ReadOnly = true;
+                    txt12.ReadOnly = true;
+                    txt13.ReadOnly = true;
+                    txt14.ReadOnly = true;
+                    txt15.ReadOnly = true;
 
-                    txt21.Enabled = false;
-                    txt22.Enabled = false;
-                    txt23.Enabled = false;
-                    txt24.Enabled = false;
-                    txt25.Enabled = false;
+                    txt21.ReadOnly = true;
+                    txt22.ReadOnly = true;
+                    txt23.ReadOnly = true;
+                    txt24.ReadOnly = true;
+                    txt25.ReadOnly = true;
 
-                    txt31.Enabled = false;
-                    txt32.Enabled = false;
-                    txt33.Enabled = false;
-                    txt34.Enabled = false;
-                    txt35.Enabled = false;
+                    txt31.ReadOnly = true;
+                    txt32.ReadOnly = true;
+                    txt33.ReadOnly = true;
+                    txt34.ReadOnly = true;
+                    txt35.ReadOnly = true;
 
-                    txt41.Enabled = false;
-                    txt42.Enabled = false;
-                    txt43.Enabled = false;
-                    txt44.Enabled = false;
-                    txt45.Enabled = false;
+                    txt41.ReadOnly = true;
+                    txt42.ReadOnly = true;
+                    txt43.ReadOnly = true;
+                    txt44.ReadOnly = true;
+                    txt45.ReadOnly = true;
 
                     txt51.Enabled = true;
                     txt52.Enabled = true;
@@ -216,35 +216,35 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
 
                 case 6:
-                    txt11.Enabled = false;
-                    txt12.Enabled = false;
-                    txt13.Enabled = false;
-                    txt14.Enabled = false;
-                    txt15.Enabled = false;
+                    txt11.ReadOnly = true;
+                    txt12.ReadOnly = true;
+                    txt13.ReadOnly = true;
+                    txt14.ReadOnly = true;
+                    txt15.ReadOnly = true;
 
-                    txt21.Enabled = false;
-                    txt22.Enabled = false;
-                    txt23.Enabled = false;
-                    txt24.Enabled = false;
-                    txt25.Enabled = false;
+                    txt21.ReadOnly = true;
+                    txt22.ReadOnly = true;
+                    txt23.ReadOnly = true;
+                    txt24.ReadOnly = true;
+                    txt25.ReadOnly = true;
 
-                    txt31.Enabled = false;
-                    txt32.Enabled = false;
-                    txt33.Enabled = false;
-                    txt34.Enabled = false;
-                    txt35.Enabled = false;
+                    txt31.ReadOnly = true;
+                    txt32.ReadOnly = true;
+                    txt33.ReadOnly = true;
+                    txt34.ReadOnly = true;
+                    txt35.ReadOnly = true;
 
-                    txt41.Enabled = false;
-                    txt42.Enabled = false;
-                    txt43.Enabled = false;
-                    txt44.Enabled = false;
-                    txt45.Enabled = false;
+                    txt41.ReadOnly = true;
+                    txt42.ReadOnly = true;
+                    txt43.ReadOnly = true;
+                    txt44.ReadOnly = true;
+                    txt45.ReadOnly = true;
 
-                    txt51.Enabled = false;
-                    txt52.Enabled = false;
-                    txt53.Enabled = false;
-                    txt54.Enabled = false;
-                    txt55.Enabled = false;
+                    txt51.ReadOnly = true;
+                    txt52.ReadOnly = true;
+                    txt53.ReadOnly = true;
+                    txt54.ReadOnly = true;
+                    txt55.ReadOnly = true;
 
                     txt61.Enabled = true;
                     txt62.Enabled = true;
