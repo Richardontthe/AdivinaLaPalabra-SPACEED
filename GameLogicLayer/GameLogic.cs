@@ -11,6 +11,10 @@ namespace AdivinaLaPalabraRicardoHernandez
     {
         private Validator validator = new Validator();
 
+        /// <summary>
+        /// validates the textBox input and changes its color according to the validation result
+        /// </summary>
+        /// <param name="textBox"></param>
         public void TextBoxValidate(TextBox textBox)
         {
             int position = Convert.ToInt32(textBox.Name.Substring(textBox.Name.Length - 1, 1));
@@ -34,6 +38,11 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
+        /// <summary>
+        /// Validates the entire word and changes the color of the textBoxes accordingly
+        /// </summary>
+        /// <param name="textBoxes"></param>
+        /// <returns>true if there is a win</returns>
         public bool GameValidation(TextBox[] textBoxes)
         {
             StringBuilder currentWord = new StringBuilder();
@@ -63,11 +72,21 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
+        /// <summary>
+        /// Returns the word to guess
+        /// </summary>
+        /// <returns></returns>
         public String GetWordToGuess()
         {
             return validator.WordToGuess;
         }
 
+
+        /// <summary>
+        /// Chechks if any of the textBoxes are empty
+        /// </summary>
+        /// <param name="textBoxes"></param>
+        /// <returns></returns>
         public bool CheckEmptyTextBoxes(TextBox[] textBoxes)
         {
             foreach (var textBox in textBoxes)
@@ -78,6 +97,9 @@ namespace AdivinaLaPalabraRicardoHernandez
             return false;
         }
 
+        /// <summary>
+        /// Resets the game by resetting the word and the try counter
+        /// </summary>
         public void ResetGame()
         {
             validator.ResetWord();

@@ -308,6 +308,7 @@ namespace AdivinaLaPalabraRicardoHernandez
             if (!gameLogic.CheckEmptyTextBoxes(txtGroup))
             {
 
+
                 if (gameLogic.GameValidation(txtGroup))
                 {
                     MessageBox.Show("We have a winner!");
