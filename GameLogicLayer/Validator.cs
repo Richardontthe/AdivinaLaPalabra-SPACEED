@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdivinaLaPalabraRicardoHernandez.GameLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -10,7 +11,13 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     internal class Validator
     {
-        private String wordToGuess = "apple";
+        private String wordToGuess;
+        WordGenerator wordGenerator = new WordGenerator();
+
+        public Validator()
+        {
+            wordToGuess = wordGenerator.GenerateWord();
+        }
 
         public String WordToGuess { get => wordToGuess; }
 

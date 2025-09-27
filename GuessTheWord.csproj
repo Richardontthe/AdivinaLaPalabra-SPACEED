@@ -47,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL\FileHandler.cs" />
     <Compile Include="GameLogicLayer\Counter.cs" />
+    <Compile Include="GameLogicLayer\WordGenerator.cs" />
     <Compile Include="GraphicLayer\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +84,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Files\Words.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
