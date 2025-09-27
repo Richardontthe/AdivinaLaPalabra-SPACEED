@@ -18,9 +18,27 @@ namespace AdivinaLaPalabraRicardoHernandez
         {
             InitializeComponent();
             layoutControl();
+            Console.WriteLine(gameLogic.GetWordToGuess());
 
         }
 
+        /// <summary>
+        /// Method to reset all controls in the form to their initial state for a game restar.
+        /// </summary>
+        private void resetControls()
+        {
+            foreach (Control ctrl in this.Controls)
+            {
+                if (ctrl is System.Windows.Forms.TextBox txt)
+                {
+                    txt.Clear();            
+                    txt.Enabled = true;    
+                    txt.ReadOnly = false;
+                    txt.ForeColor = Color.Black; 
+                    txt.BackColor = Color.White;
+                }
+            }
+        }
         private void layoutControl()
         {
             switch (Counter.TryNumber)
@@ -293,6 +311,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 if (gameLogic.GameValidation(txtGroup))
                 {
                     MessageBox.Show("We have a winner!");
+                        btnValidate.Enabled = false;
                 }
                 else
                 {
@@ -300,8 +319,10 @@ namespace AdivinaLaPalabraRicardoHernandez
                     if (Counter.TryNumber > 6)
                     {
                         MessageBox.Show("We are sorry, the word was: " + gameLogic.GetWordToGuess());
+                        btnValidate.Enabled = false;
                     }
-                    layoutControl();
+                    this.layoutControl();
+                   
                 }
             }
             else
@@ -807,7 +828,12 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         private void btnReset_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Let's try again, the word was: " + gameLogic.GetWordToGuess());
+            MessageBox.Show("Let's try again! ");
+            gameLogic.ResetGame();
+            this.resetControls();
+            this.layoutControl();
+            btnValidate.Enabled = true;
+
 
         }
     }

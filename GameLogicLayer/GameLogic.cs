@@ -78,5 +78,11 @@ namespace AdivinaLaPalabraRicardoHernandez
             return false;
         }
 
+        public void ResetGame()
+        {
+            validator.ResetWord();
+            Counter.ResetCounter();
+        }
+
     }
 }

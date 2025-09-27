@@ -55,15 +55,20 @@ namespace AdivinaLaPalabraRicardoHernandez
             return result;
         }
 
-        
-   
+        /// <summary>
+        /// Resets the word to guess to a new one 
+        /// </summary>
+        public void ResetWord()
+        {
+            this.wordToGuess = wordGenerator.GenerateWord();
+        }
 
         /// <summary>
         /// Method to check if the game was won
         /// </summary>
         /// <param name="word"> word to evaluate </param>
         /// <returns> True if its a win</returns>
-    public bool WinCheck(String word) {
+        public bool WinCheck(String word) {
             if (word.ToLower() == this.wordToGuess.ToLower())
             {
                 return true;

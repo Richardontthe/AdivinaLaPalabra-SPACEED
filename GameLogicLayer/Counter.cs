@@ -14,8 +14,8 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         public static void AddTry()
         {
-            if (tryNumber < 6)
-                tryNumber++;
+
+            tryNumber++;
             
         }
 
