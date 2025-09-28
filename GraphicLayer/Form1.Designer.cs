@@ -318,10 +318,13 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.lblTitle.Location = new System.Drawing.Point(128, 0);
+            this.lblTitle.BackColor = System.Drawing.Color.Gray;
+            this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblTitle.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.lblTitle.Location = new System.Drawing.Point(166, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(417, 58);
+            this.lblTitle.Size = new System.Drawing.Size(335, 44);
             this.lblTitle.TabIndex = 31;
             this.lblTitle.Text = "Guess The Word!";
             // 
