@@ -14,6 +14,9 @@ namespace AdivinaLaPalabraRicardoHernandez
         private String wordToGuess;
         WordGenerator wordGenerator = new WordGenerator();
 
+        /// <summary>
+        /// Initializes a new instance of the Validator class and generates a word to guess randomly.
+        /// </summary>
         public Validator()
         {
             wordToGuess = wordGenerator.GenerateWord();

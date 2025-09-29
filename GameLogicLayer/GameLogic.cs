@@ -24,12 +24,12 @@ namespace AdivinaLaPalabraRicardoHernandez
 
             if (validationResult == 1)
             {
-                textBox.ForeColor = System.Drawing.Color.Green;
+                textBox.ForeColor = System.Drawing.Color.LightGreen;
                 textBox.BackColor = System.Drawing.Color.Gray;
             }
             else if (validationResult == 2)
             {
-                textBox.ForeColor = System.Drawing.Color.Yellow;
+                textBox.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
                 textBox.BackColor = System.Drawing.Color.Gray;
             }
             else
@@ -74,7 +74,11 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
-
+        /// <summary>
+        /// validates if the word formed by the textBoxes is a valid word
+        /// </summary>
+        /// <param name="textBoxes"></param>
+        /// <returns></returns>
 
         public bool isValidWord(System.Windows.Forms.TextBox[]  textBoxes)
         {

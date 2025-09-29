@@ -12,7 +12,9 @@ namespace AdivinaLaPalabraRicardoHernandez
     internal class FileHandler
     {
         public string FilePath { get; set; }
-
+        /// <summary>
+        ///  initializes a new instance of the FileHandler class and sets the file path for the CSV file containing words.
+        /// </summary>
         public FileHandler()
         {
             string basePath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
