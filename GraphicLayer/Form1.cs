@@ -18,7 +18,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         {
             InitializeComponent();
             layoutControl();
-            Console.WriteLine(gameLogic.GetWordToGuess());
+            System.Diagnostics.Debug.WriteLine(gameLogic.GetWordToGuess() );
 
         }
 
@@ -39,6 +39,9 @@ namespace AdivinaLaPalabraRicardoHernandez
                 }
             }
         }
+        /// <summary>
+        /// Method to layout the controls based on the current try number.
+        /// </summary>
         private void layoutControl()
         {
             switch (Counter.TryNumber)
@@ -278,7 +281,11 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
-
+        /// <summary>
+        /// Event handler for the Validate button click event. Validates the current row of text boxes and provides feedback to the user.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnValidate_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.TextBox[] txtGroup = null;
@@ -305,8 +312,20 @@ namespace AdivinaLaPalabraRicardoHernandez
                     break;
             }
 
+
+
             if (!gameLogic.CheckEmptyTextBoxes(txtGroup))
             {
+                
+                if (!gameLogic.isValidWord(txtGroup))
+                {
+                    MessageBox.Show("The word must be a valid english word!");
+                    foreach(System.Windows.Forms.TextBox txt in txtGroup)
+                    {
+                         txt.Clear();
+                    }
+                    return;
+                }
 
 
                 if (gameLogic.GameValidation(txtGroup))

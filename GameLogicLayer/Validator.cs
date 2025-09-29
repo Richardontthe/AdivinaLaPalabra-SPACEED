@@ -22,6 +22,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         public String WordToGuess { get => wordToGuess; }
 
 
+
         /// <summary>
         /// This method validates the position and letter inputs 1 if the letter 
         /// is in the exact location of the word to guess or 2 if the letter is present in 
@@ -69,7 +70,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// <param name="word"> word to evaluate </param>
         /// <returns> True if its a win</returns>
         public bool WinCheck(String word) {
-            if (word.ToLower() == this.wordToGuess.ToLower())
+            if (word.ToLower() == this.wordToGuess.Trim().ToLower())
             {
                 return true;
             }

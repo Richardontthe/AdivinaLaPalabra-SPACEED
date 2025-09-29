@@ -41,7 +41,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                     for (int j = 0; j < wordSplit.Length; j++)
                     {
                         if (!string.IsNullOrWhiteSpace(wordSplit[j]))
-                            words.Add(wordSplit[j]);
+                            words.Add(wordSplit[j].Trim());
                     }
                 }
 

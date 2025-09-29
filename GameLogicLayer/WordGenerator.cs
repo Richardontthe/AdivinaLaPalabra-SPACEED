@@ -16,6 +16,12 @@ namespace AdivinaLaPalabraRicardoHernandez.GameLogicLayer
             return words[random.Next(words.Count)];
         }
 
+        public bool IsValidWord(string word)
+        {
+            List<string> words = fileHandler.getWords();
+            return words.Contains(word);
+        }
+
 
     }
 }

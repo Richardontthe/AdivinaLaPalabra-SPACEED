@@ -1,9 +1,11 @@
-﻿using System;
+﻿using AdivinaLaPalabraRicardoHernandez.GameLogicLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AdivinaLaPalabraRicardoHernandez
 {
@@ -15,7 +17,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// validates the textBox input and changes its color according to the validation result
         /// </summary>
         /// <param name="textBox"></param>
-        public void TextBoxValidate(TextBox textBox)
+        public void TextBoxValidate(System.Windows.Forms.TextBox textBox)
         {
             int position = Convert.ToInt32(textBox.Name.Substring(textBox.Name.Length - 1, 1));
             int validationResult = validator.Validate(position, textBox.Text.ToLower());
@@ -23,12 +25,12 @@ namespace AdivinaLaPalabraRicardoHernandez
             if (validationResult == 1)
             {
                 textBox.ForeColor = System.Drawing.Color.Green;
-                textBox.BackColor = System.Drawing.Color.LightGray;
+                textBox.BackColor = System.Drawing.Color.Gray;
             }
             else if (validationResult == 2)
             {
                 textBox.ForeColor = System.Drawing.Color.Yellow;
-                textBox.BackColor = System.Drawing.Color.LightGray;
+                textBox.BackColor = System.Drawing.Color.Gray;
             }
             else
             {
@@ -43,7 +45,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         /// <param name="textBoxes"></param>
         /// <returns>true if there is a win</returns>
-        public bool GameValidation(TextBox[] textBoxes)
+        public bool GameValidation(System.Windows.Forms.TextBox[] textBoxes)
         {
             StringBuilder currentWord = new StringBuilder();
             foreach (var textBox in textBoxes)
@@ -72,6 +74,19 @@ namespace AdivinaLaPalabraRicardoHernandez
 
         }
 
+
+
+        public bool isValidWord(System.Windows.Forms.TextBox[]  textBoxes)
+        {
+            StringBuilder currentWord = new StringBuilder();
+            foreach (var textBox in textBoxes)
+            {
+                currentWord.Append(textBox.Text);
+            }
+            WordGenerator wordGenerator = new WordGenerator();
+            return new WordGenerator().IsValidWord(currentWord.ToString());
+        }
+
         /// <summary>
         /// Returns the word to guess
         /// </summary>
@@ -87,7 +102,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         /// <param name="textBoxes"></param>
         /// <returns></returns>
-        public bool CheckEmptyTextBoxes(TextBox[] textBoxes)
+        public bool CheckEmptyTextBoxes(System.Windows.Forms.TextBox[] textBoxes)
         {
             foreach (var textBox in textBoxes)
             {
