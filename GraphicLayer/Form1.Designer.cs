@@ -63,7 +63,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnReset = new System.Windows.Forms.Button();
             this.tltp1 = new System.Windows.Forms.ToolTip(this.components);
-            this.rdbTurbo = new System.Windows.Forms.RadioButton();
+            this.chkAyuda = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // txt11
@@ -342,19 +342,18 @@
             this.btnReset.Text = "Resetear";
             this.tltp1.SetToolTip(this.btnReset, "Reset will reveal the word and reset a game with a new ");
             this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // rdbTurbo
+            // chkAyuda
             // 
-            this.rdbTurbo.AutoSize = true;
-            this.rdbTurbo.BackColor = System.Drawing.Color.Transparent;
-            this.rdbTurbo.Location = new System.Drawing.Point(12, 24);
-            this.rdbTurbo.Name = "rdbTurbo";
-            this.rdbTurbo.Size = new System.Drawing.Size(79, 22);
-            this.rdbTurbo.TabIndex = 32;
-            this.rdbTurbo.TabStop = true;
-            this.rdbTurbo.Text = "Ayuda";
-            this.rdbTurbo.UseVisualStyleBackColor = false;
-            this.rdbTurbo.CheckedChanged += new System.EventHandler(this.rdbTurbo_CheckedChanged);
+            this.chkAyuda.AutoSize = true;
+            this.chkAyuda.BackColor = System.Drawing.Color.Transparent;
+            this.chkAyuda.Location = new System.Drawing.Point(8, 26);
+            this.chkAyuda.Name = "chkAyuda";
+            this.chkAyuda.Size = new System.Drawing.Size(80, 22);
+            this.chkAyuda.TabIndex = 32;
+            this.chkAyuda.Text = "Ayuda";
+            this.chkAyuda.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -364,7 +363,7 @@
             this.BackgroundImage = global::AdivinaLaPalabraRicardoHernandez.Properties.Resources.Fondo_WIN_Adivina;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 454);
-            this.Controls.Add(this.rdbTurbo);
+            this.Controls.Add(this.chkAyuda);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnValidate);
@@ -443,7 +442,7 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ToolTip tltp1;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.RadioButton rdbTurbo;
+        private System.Windows.Forms.CheckBox chkAyuda;
     }
 }
 

@@ -318,7 +318,7 @@ namespace AdivinaLaPalabraRicardoHernandez
             if (!gameLogic.CheckEmptyTextBoxes(txtGroup))
             {
 
-                if (!gameLogic.isValidWord(txtGroup) && !rdbTurbo.Checked)
+                if (!gameLogic.isValidWord(txtGroup) && !chkAyuda.Checked)
                 {
 
                     MessageBox.Show("Debe ser una palabra en español");
@@ -332,19 +332,23 @@ namespace AdivinaLaPalabraRicardoHernandez
 
                 if (gameLogic.GameValidation(txtGroup))
                 {
-                    MessageBox.Show("Felicidades! " +
-                        "\nCada vez más cerca de resolver el acertijo...");
+                    MessageBox.Show($"Felicidades! " +
+                        "\nCada vez más cerca de resolver el acertijo..." +
+                        "\n\nLa palabra correcta es: " + gameLogic.correctWord());
                     Counter.AddWin();
                     gameLogic.nextLevelWord(Counter.winNumber);
                     this.resetControls();
+                    Counter.ResetCounter();
+                    this.layoutControl();
                 }
                 else
                 {
                     Counter.AddTry();
                     if (Counter.TryNumber > 6)
                     {
-                        MessageBox.Show("We are sorry, the word was: " + gameLogic.GetWordToGuess());
+                        MessageBox.Show("Sigue intentando, dale resetear");
                         btnValidate.Enabled = false;
+                        btnReset.Focus();
                     }
                     this.layoutControl();
 
@@ -844,6 +848,14 @@ namespace AdivinaLaPalabraRicardoHernandez
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            this.resetControls();
+            this.layoutControl();
+            Counter.ResetCounter();
+            btnValidate.Enabled = true;
         }
     }//no borrar
 }// no borrar 

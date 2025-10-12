@@ -20,6 +20,11 @@ namespace AdivinaLaPalabraRicardoHernandez
             validator.getWordToGuess(level);
         }
 
+        public string correctWord()
+        {
+            return validator.WordToGuess;
+        }
+
         public void resetGame()
         {
             validator.ResetWord();
