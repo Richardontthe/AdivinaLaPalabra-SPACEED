@@ -18,7 +18,8 @@ namespace AdivinaLaPalabraRicardoHernandez
         {
             InitializeComponent();
             layoutControl();
-            System.Diagnostics.Debug.WriteLine(gameLogic.GetWordToGuess() );
+            gameLogic.nextLevelWord(Counter.winNumber);
+            System.Diagnostics.Debug.WriteLine(gameLogic.GetWordToGuess());
 
         }
 
@@ -31,10 +32,10 @@ namespace AdivinaLaPalabraRicardoHernandez
             {
                 if (ctrl is System.Windows.Forms.TextBox txt)
                 {
-                    txt.Clear();            
-                    txt.Enabled = true;    
+                    txt.Clear();
+                    txt.Enabled = true;
                     txt.ReadOnly = false;
-                    txt.ForeColor = Color.Black; 
+                    txt.ForeColor = Color.Black;
                     txt.BackColor = Color.White;
                 }
             }
@@ -316,22 +317,25 @@ namespace AdivinaLaPalabraRicardoHernandez
 
             if (!gameLogic.CheckEmptyTextBoxes(txtGroup))
             {
-                
-                if (!gameLogic.isValidWord(txtGroup))
+
+                if (!gameLogic.isValidWord(txtGroup) && !rdbTurbo.Checked)
+
+                    MessageBox.Show("Debe ser una palabra en español");
+                foreach (System.Windows.Forms.TextBox txt in txtGroup)
                 {
-                    MessageBox.Show("The word must be a valid english word!");
-                    foreach(System.Windows.Forms.TextBox txt in txtGroup)
-                    {
-                         txt.Clear();
-                    }
-                    return;
+                    txt.Clear();
                 }
+                return;
+
 
 
                 if (gameLogic.GameValidation(txtGroup))
                 {
-                    MessageBox.Show("We have a winner!");
-                        btnValidate.Enabled = false;
+                    MessageBox.Show("Felicidades! " +
+                        "\nCada vez más cerca de resolver el acertijo...");
+                    Counter.AddWin();
+                    gameLogic.nextLevelWord(Counter.winNumber);
+                    this.resetControls();
                 }
                 else
                 {
@@ -342,519 +346,23 @@ namespace AdivinaLaPalabraRicardoHernandez
                         btnValidate.Enabled = false;
                     }
                     this.layoutControl();
-                   
+
                 }
             }
+
             else
             {
-                MessageBox.Show("Please complete all words before validating");
-
+                MessageBox.Show("No pueden quedar espacios vacíos");
             }
+
+
 
 
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox15_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox14_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox13_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt1 = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox20_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox19_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox18_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox16_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox17_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox25_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox24_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox23_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox21_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox22_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox30_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox29_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox28_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox26_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox27_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                return;
-            }
-
-            System.Windows.Forms.TextBox txt = sender as System.Windows.Forms.TextBox;
-
-            if (!char.IsControl(e.KeyChar) && txt.Text.Length >= 1)
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void btnReset_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Let's try again! ");
-            gameLogic.ResetGame();
-            this.resetControls();
-            this.layoutControl();
-            btnValidate.Enabled = true;
-
-
-        }
     }
 }
+
+
+
+

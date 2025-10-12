@@ -135,7 +135,6 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         public void ResetGame()
         {
-            validator.ResetWord();
             Counter.ResetCounter();
         }
 
