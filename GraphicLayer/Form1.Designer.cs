@@ -72,6 +72,7 @@
             this.txt11.Name = "txt11";
             this.txt11.Size = new System.Drawing.Size(31, 26);
             this.txt11.TabIndex = 0;
+            this.txt11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt11_KeyPress);
             // 
             // txt12
             // 
@@ -268,6 +269,7 @@
             this.txt62.Name = "txt62";
             this.txt62.Size = new System.Drawing.Size(31, 26);
             this.txt62.TabIndex = 26;
+            // 
             // txt61
             // 
             this.txt61.Location = new System.Drawing.Point(201, 335);
@@ -315,13 +317,15 @@
             // rdbTurbo
             // 
             this.rdbTurbo.AutoSize = true;
+            this.rdbTurbo.BackColor = System.Drawing.Color.Transparent;
             this.rdbTurbo.Location = new System.Drawing.Point(12, 24);
             this.rdbTurbo.Name = "rdbTurbo";
-            this.rdbTurbo.Size = new System.Drawing.Size(125, 22);
+            this.rdbTurbo.Size = new System.Drawing.Size(79, 22);
             this.rdbTurbo.TabIndex = 32;
             this.rdbTurbo.TabStop = true;
-            this.rdbTurbo.Text = "radioButton1";
-            this.rdbTurbo.UseVisualStyleBackColor = true;
+            this.rdbTurbo.Text = "Ayuda";
+            this.rdbTurbo.UseVisualStyleBackColor = false;
+            this.rdbTurbo.CheckedChanged += new System.EventHandler(this.rdbTurbo_CheckedChanged);
             // 
             // Form1
             // 
