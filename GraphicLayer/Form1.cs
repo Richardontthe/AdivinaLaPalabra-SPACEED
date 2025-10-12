@@ -319,15 +319,16 @@ namespace AdivinaLaPalabraRicardoHernandez
             {
 
                 if (!gameLogic.isValidWord(txtGroup) && !rdbTurbo.Checked)
+                {
 
                     MessageBox.Show("Debe ser una palabra en español");
-                foreach (System.Windows.Forms.TextBox txt in txtGroup)
-                {
-                    txt.Clear();
+                    foreach (System.Windows.Forms.TextBox txt in txtGroup)
+                    {
+                        txt.Clear();
+                    }
+                    return;
+
                 }
-                return;
-
-
 
                 if (gameLogic.GameValidation(txtGroup))
                 {
