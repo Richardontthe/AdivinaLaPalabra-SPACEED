@@ -381,10 +381,9 @@ namespace AdivinaLaPalabraRicardoHernandez
             }
         }
 
-
         private void txt12_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if(!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
                 return;
@@ -397,7 +396,6 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
-
 
         private void txt13_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -415,7 +413,6 @@ namespace AdivinaLaPalabraRicardoHernandez
             }
         }
 
-
         private void txt14_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -432,7 +429,6 @@ namespace AdivinaLaPalabraRicardoHernandez
             }
         }
 
-
         private void txt15_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -448,6 +444,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt21_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -463,6 +460,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt22_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -478,6 +476,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt23_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -493,6 +492,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt24_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -508,6 +508,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt25_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -523,6 +524,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt31_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -538,6 +540,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt32_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -553,6 +556,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt33_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -568,6 +572,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt34_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -583,6 +588,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt35_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -598,6 +604,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt41_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -613,6 +620,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt42_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -628,7 +636,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
-        
+
         private void txt43_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -644,6 +652,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt44_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -659,6 +668,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt45_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -674,6 +684,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt51_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -689,6 +700,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt52_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -704,6 +716,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt53_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -719,6 +732,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt54_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -734,6 +748,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt55_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -749,6 +764,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt61_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -764,6 +780,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt62_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -779,6 +796,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt63_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -794,6 +812,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt64_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -809,6 +828,7 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
+
         private void txt65_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsLetter(e.KeyChar) && !char.IsControl(e.KeyChar))
@@ -824,8 +844,6 @@ namespace AdivinaLaPalabraRicardoHernandez
                 e.Handled = true;
             }
         }
-
-
     }//no borrar
 }// no borrar 
 
