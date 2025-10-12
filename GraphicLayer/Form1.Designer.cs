@@ -307,36 +307,40 @@
             // 
             // btnValidate
             // 
-            this.btnValidate.Location = new System.Drawing.Point(579, 401);
+            this.btnValidate.BackColor = System.Drawing.Color.Plum;
+            this.btnValidate.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnValidate.Location = new System.Drawing.Point(553, 401);
             this.btnValidate.Name = "btnValidate";
-            this.btnValidate.Size = new System.Drawing.Size(99, 38);
+            this.btnValidate.Size = new System.Drawing.Size(125, 38);
             this.btnValidate.TabIndex = 30;
-            this.btnValidate.Text = "Validate";
-            this.btnValidate.UseVisualStyleBackColor = true;
+            this.btnValidate.Text = "Validar";
+            this.btnValidate.UseVisualStyleBackColor = false;
             this.btnValidate.Click += new System.EventHandler(this.btnValidate_Click);
             // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.Gray;
+            this.lblTitle.BackColor = System.Drawing.Color.MediumOrchid;
             this.lblTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblTitle.Font = new System.Drawing.Font("Century Schoolbook", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Copperplate Gothic Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lblTitle.Location = new System.Drawing.Point(217, 9);
+            this.lblTitle.Location = new System.Drawing.Point(155, 9);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(335, 44);
+            this.lblTitle.Size = new System.Drawing.Size(414, 42);
             this.lblTitle.TabIndex = 31;
-            this.lblTitle.Text = "Guess The Word!";
+            this.lblTitle.Text = "Adivina la palabra!";
             // 
             // btnReset
             // 
+            this.btnReset.BackColor = System.Drawing.Color.Plum;
+            this.btnReset.Font = new System.Drawing.Font("Cascadia Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Location = new System.Drawing.Point(16, 401);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(99, 38);
+            this.btnReset.Size = new System.Drawing.Size(142, 38);
             this.btnReset.TabIndex = 31;
-            this.btnReset.Text = "Reset";
+            this.btnReset.Text = "Resetear";
             this.tltp1.SetToolTip(this.btnReset, "Reset will reveal the word and reset a game with a new ");
-            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.UseVisualStyleBackColor = false;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // Form1
@@ -344,7 +348,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.BackgroundImage = global::AdivinaLaPalabraRicardoHernandez.Properties.Resources.Game_Background;
+            this.BackgroundImage = global::AdivinaLaPalabraRicardoHernandez.Properties.Resources.Fondo_WIN_Adivina;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(694, 454);
             this.Controls.Add(this.btnReset);
@@ -422,9 +426,9 @@
         private System.Windows.Forms.TextBox txt62;
         private System.Windows.Forms.TextBox txt61;
         private System.Windows.Forms.Button btnValidate;
-        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.ToolTip tltp1;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 

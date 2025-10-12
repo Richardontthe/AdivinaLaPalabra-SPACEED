@@ -8,7 +8,10 @@ namespace AdivinaLaPalabraRicardoHernandez
 {
     internal class Counter
     {
-        private static int tryNumber =1;
+        public static int tryNumber =1;
+        public static int winNumber = 1;
+
+        public static int WinNumber { get => winNumber; }
 
         public static int TryNumber { get => tryNumber;  }
         /// <summary>
@@ -28,6 +31,18 @@ namespace AdivinaLaPalabraRicardoHernandez
             tryNumber = 1;
         }
 
+
+        public static void AddWin()
+        {
+
+            winNumber++;
+
+        }
+
+        public static void resetWin()
+        {
+            winNumber = 1;
+        }
 
     }
 }

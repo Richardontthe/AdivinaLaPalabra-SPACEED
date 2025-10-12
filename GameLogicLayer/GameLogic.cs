@@ -1,4 +1,6 @@
-﻿using AdivinaLaPalabraRicardoHernandez.GameLogicLayer;
+﻿
+
+using AdivinaLaPalabraRicardoHernandez.GameLogicLayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,18 @@ namespace AdivinaLaPalabraRicardoHernandez
     internal class GameLogic
     {
         private Validator validator = new Validator();
+
+        public void nextLevelWord(int level)
+        {
+            validator.getWordToGuess(level);
+        }
+
+        public void resetGame()
+        {
+            validator.ResetWord();
+        }
+
+
 
         /// <summary>
         /// validates the textBox input and changes its color according to the validation result

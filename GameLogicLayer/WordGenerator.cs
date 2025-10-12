@@ -15,11 +15,16 @@ namespace AdivinaLaPalabraRicardoHernandez.GameLogicLayer
         /// Generates a random word from the list of words obtained from the FileHandler class.
         /// </summary>
         /// <returns></returns>
-        public string GenerateWord()
+        public string[] GenerateWord()
         {
-            List<string> words = fileHandler.getWords();
-            return words[random.Next(words.Count)];
+            string[] lista = { "Astro", "Lunar", "Radar", "Naves", "Cometa" };
+
+            return lista;
+
+
         }
+            
+        
 
         /// <summary>
         /// checks if a word exists in the list of words obtained from the FileHandler class.

@@ -14,17 +14,15 @@ namespace AdivinaLaPalabraRicardoHernandez
         private String wordToGuess;
         WordGenerator wordGenerator = new WordGenerator();
 
-        /// <summary>
-        /// Initializes a new instance of the Validator class and generates a word to guess randomly.
-        /// </summary>
-        public Validator()
-        {
-            wordToGuess = wordGenerator.GenerateWord();
-        }
+
 
         public String WordToGuess { get => wordToGuess; }
 
-
+        public String getWordToGuess(int word)
+        {
+            this.wordToGuess = wordGenerator.GenerateWord()[word -1 ];
+            return wordToGuess;
+        }
 
         /// <summary>
         /// This method validates the position and letter inputs 1 if the letter 
@@ -64,7 +62,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         public void ResetWord()
         {
-            this.wordToGuess = wordGenerator.GenerateWord();
+            this.wordToGuess = wordGenerator.GenerateWord()[0];
         }
 
         /// <summary>
