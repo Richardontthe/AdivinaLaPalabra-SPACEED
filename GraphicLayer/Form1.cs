@@ -334,12 +334,26 @@ namespace AdivinaLaPalabraRicardoHernandez
                 {
                     MessageBox.Show($"Felicidades! " +
                         "\nCada vez más cerca de resolver el acertijo..." +
-                        "\n\nLa palabra correcta es: " + gameLogic.correctWord());
+                        "\n\nLa palabra correcta es: " + gameLogic.correctWord().ToUpper());
                     Counter.AddWin();
                     gameLogic.nextLevelWord(Counter.winNumber);
                     this.resetControls();
                     Counter.ResetCounter();
                     this.layoutControl();
+                    if (Counter.WinNumber >=6)
+                    {
+                        MessageBox.Show("Felicidades han ganado cadetes" +
+                            "\nLas palabras obtenidas fueron:" +
+                            "\nASTRO" +
+                            "\nLUNAR" +
+                            "\nRADAR" +
+                            "\nNAVES" +
+                            "\nCOMETA");
+
+                        Counter.resetWin();
+                        gameLogic.nextLevelWord(Counter.winNumber);
+                    }
+
                 }
                 else
                 {
