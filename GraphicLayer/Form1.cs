@@ -351,7 +351,10 @@ namespace AdivinaLaPalabraRicardoHernandez
                             "\nCOMETA");
 
                         Counter.resetWin();
-                        gameLogic.nextLevelWord(Counter.winNumber);
+                        this.resetControls();
+                        Counter.ResetCounter();
+                        this.layoutControl();
+
                     }
 
                 }

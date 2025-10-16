@@ -17,8 +17,7 @@ namespace AdivinaLaPalabraRicardoHernandez
         /// </summary>
         public FileHandler()
         {
-            string basePath = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName;
-            string path = Path.Combine(basePath, "Files", "Words.csv");
+            string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Files", "Words.csv");
             FilePath = path ;
         }
 
